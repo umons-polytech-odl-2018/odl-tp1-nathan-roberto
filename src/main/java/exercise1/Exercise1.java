@@ -12,10 +12,13 @@ public class Exercise1 {
 		// Considérant que cette classe est démarrée en ligne de commande avec un premier paramètre donnant le nom
 		// et un second donnant l'âge (nombre entier), créez un objet Person sur base de ceux-ci.
 		// Ecrivez ensuite le nom et l'âge de cette personne sur la sortie standard.
+
+
 		String name = args[0];
 		int age = Integer.parseInt(args[1]);
-
-		Person person = new Person(name, age);
+		Person person = createPerson(name, age);
+		//On peut résumer ces lignes par
+		// 	Person person = createPerson(args[0], Integer.parseInt(args[1]));
 
 		System.out.println(person);
 	}
