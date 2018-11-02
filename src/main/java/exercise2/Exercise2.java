@@ -10,16 +10,14 @@ public class Exercise2 {
 	static void createPerson(int age) {
 	}
 
-	static int computePopulationSize() {
+	static int computePopulationSize(Person[] person) {
 		// TODO remove comment when implemented
-		// return Person.computePopulationSize();
-		return 0;
+		return Person.computePopulationSize(person);
 	}
 
-	static float computeAveragePopulationAge() {
+	static float computeAveragePopulationAge(Person[] person) {
 		// TODO remove comment when implemented
-		// return Person.computeAveragePopulationAge();
-		return 0.0F;
+		return Person.computeAveragePopulationAge(person);
 	}
 
 	static void resetPopulation() {
