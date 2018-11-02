@@ -1,5 +1,7 @@
 package exercise2;
 
+import com.sun.corba.se.impl.orb.PropertyOnlyDataCollector;
+
 public class Exercise2 {
 
 	// Ajoutez un champ age à chaque instance de la classe Person.
@@ -7,21 +9,22 @@ public class Exercise2 {
 	// Créez-y une méthode statique "computeAveragePopulationAge" pour calculer l'âge moyen de la population.
 	// Implémentez-y une méthode statique "resetPopulation" pour remettre les compteurs à zéro.
 
-	static void createPerson(int age) {
+	static Person createPerson(int age) {
+		 return new Person(age);
 	}
 
-	static int computePopulationSize(Person[] person) {
+	static int computePopulationSize() {
 		// TODO remove comment when implemented
-		return Person.computePopulationSize(person);
+		return Person.computePopulationSize();
 	}
 
-	static float computeAveragePopulationAge(Person[] person) {
+	static float computeAveragePopulationAge() {
 		// TODO remove comment when implemented
-		return Person.computeAveragePopulationAge(person);
+		return Person.computeAveragePopulationAge();
 	}
 
 	static void resetPopulation() {
 		// TODO remove comment when implemented
-		// Person.resetPopulation();
+		Person.resetPopulation();
 	}
 }
